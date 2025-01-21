@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #3d0066; 
+            color: #fdfd96;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6a00cc; 
+            color: #fdfd96; 
+            padding: 100px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 80px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            color: #fdfd96;
+        }
+
+        .greeting {
+            font-size: 36px;
+            font-weight: 600;
+            color: #fdfd96;
+            margin-top: 20px;
+        }
+
+        main {
+            padding: 40px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        main h2 {
+            font-size: 56px;
+            color: #fdfd96;
+            margin-bottom: 40px;
+        }
+
+        .info-content {
+            font-size: 28px;
+            line-height: 1.6;
+            color: #e1e1e1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .info-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 24px 40px;
+            background-color: #ffcc00; 
+            color: #3d0066; 
+            text-decoration: none;
+            font-size: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #6600cc; 
+            color: #fdfd96; 
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #3d0066; 
+            color: #fdfd96; 
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        .footer-text {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .footer-subtext {
+            font-size: 18px;
+            color: #fdfd96;
+        }
+
+        .footer-subtext a {
+            color: #ffcc00; 
+            text-decoration: none;
+        }
+
+        
+        .side-links {
+            position: fixed;
+            top: 20%;
+            right: 20px;
+            color: #fdfd96;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .side-links a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #ffcc00;
+        }
+
+        .side-links a:hover {
+            color: #6600cc;
+        }
+
+        .side-links i {
+            margin-right: 10px;
+            font-size: 32px;  
+        }
+
+    </style>
+    <script>
+        function displayGreeting() {
+            const hours = new Date().getHours();
+            let greeting;
+            if (hours < 12) {
+                greeting = "Here's a bit about me!";
+            } else if (hours < 18) {
+                greeting = "Here's a bit about me!";
+            } else {
+                greeting = "Here's a bit about me!";
+            }
+            document.getElementById("greeting").textContent = greeting;
+        }
+        window.onload = displayGreeting;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Info About Me</h1>
+        <p id="greeting" class="greeting"></p>
+    </header>
+    <main>
+        <h2>Who Am I?</h2>
+        <div class="info-content">
+            <p>Welcome to my page! Here's a little about me:</p>
+            <p>My name is Tasos, I'm 18 years of age and I took part in the making of Legit Gaming Website. On my part I talked about the genre of battle royale games representing the game Fortnite. Generative AI has been used for better explanation and view of the game.</p>
+            <img src="../images/mojiz.png" alt="Personal Image">
+        </div>
+    </main>
+    <div class="button-container">
+        <a href="hub.html" class="button">Back to Hub</a>
+    </div>
+</body>
+</html>

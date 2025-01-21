@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Sonic Platform Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.side-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            opacity: 0,5;
+        }
+        .circle-button {
+            width: 40px;
+            height: 40px;
+            background-color: #8b0000;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .circle-button img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+        }
+
+
+
+
+
+</style>
+<body>
+    <header class="header">
+        <h1>Welcome to Sonic!</h1>
+
+        <div class="side-bar">
+            <div class="circle-button">
+                <a href="../index.html"><img src="../images/hom.png" alt="Button Icon"></a>
+            </div>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Sonic</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Platform Games</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="about me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+          
+            <h2>Experience the Thrill of Speed with Sonic!</h2>
+            <p>Jump into the fast-paced world of Sonic the Hedgehog! With his lightning speed and signature blue color, Sonic has captured the hearts of gamers around the world since 1991. Get ready for a platform gaming adventure that's filled with action, loops, and colorful worlds.</p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Sonic Game Series!(Made by Nikolaos Tsatsanidis)</p>
+        <div style="text-align: center; margin-top: 40px;">
+            <img src="../images/Sonic Gif 1.gif" style="width: 1920px; height: 1080px"></a>
+        </div>
+    </footer>
+    <script>
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor-effect');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>

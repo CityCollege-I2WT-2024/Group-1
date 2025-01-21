@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('../Other/cs_regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Verdana-Bold';
+            src: url('../Other/verdana-bold.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #f9c846;
+            color: #1c1c1c;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border: 2px solid #f9c846;
+        }
+
+        .profile-details {
+            max-width: 600px;
+        }
+
+        .profile-details h2 {
+            margin: 0 0 10px;
+            font-size: 2rem;
+            color: #f9c846;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        .profile-details p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-family: 'Verdana-Bold', sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1c1c1c;
+            color: #f9c846;
+            font-size: 0.9rem;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        footer a {
+            color: #f9c846;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-details">
+                <h2>Haris Terti</h2>
+                <p>From Kosovo, born in Greece. An active CS2 player. As a CS:GO player, I immerse myself in the tactical depth and intense competitive scenes the game offers. From perfecting smokes on Mirage to clutching rounds on Inferno, each match brings a unique challenge that sharpens my skills. Whether playing with friends or climbing the ranks solo, CS:GO continuously pushes my strategic thinking and reflexes to the limit. With countless hours spent mastering the game's mechanics, I thrive on the adrenaline of each victory and the lessons learned from every defeat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="hub.html" class="button">Back to Hub</a>
+        <a href="maps.html" class="button">Maps</a>
+        <a href="extras.html" class="button">Extras</a>
+        <a href="evolution.html" class="button">Evolution</a>
+        <a href="market.html" class="button">Market</a>
+    </div>
+
+    <footer>
+        Celebrating the competitive spirit of Counter-Strike.
+    </footer>
+</body>
+</html>
