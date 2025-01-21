@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlast: Maps</title>
+    <style>
+        @font-face {
+            font-family: 'Fright Night';
+            src: url('../Other/Fright Night.ttf') format('truetype'),
+                 url('../Other/Fright Night.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Base 02';
+            src: url('../Other/Base 02.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Fright Night', serif;
+            background-color: #1c1f23;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #23272a;
+            color: #ff6347;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 12px 25px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #333333;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6347;
+            background-color: #e0e0e0;
+            transform: translateY(-5px);
+        }
+        main {
+            padding: 30px;
+            line-height: 1.8;
+        }
+        h2 {
+            color: #ff6347;
+            border-bottom: 2px solid #ff4040;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .map-section {
+            display: flex;
+            align-items: flex-start;
+            background: #2a2e35;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            gap: 20px;
+        }
+        .map-section img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .map-section-content {
+            flex: 1;
+        }
+        .map-section h3 {
+            color: #ff6347;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: 'Base 02', sans-serif;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #dcdcdc;
+        }
+        footer {
+            background: #23272a;
+            color: #bbb;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outlast: Maps</h1>
+        <nav>
+            <a href="hub.html">Home</a>
+            <a href="lore.html">Lore</a>
+            <a href="char.html">Characters</a>
+            <a href="gameplay.html">Gameplay</a>
+            <a href="AboutMe.html">About Me</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Explore the Terrifying Grounds of Mount Massive</h2>
+        <div class="map-section">
+            <img src="../images/asylum.png" alt="Asylum Layout">
+            <div class="map-section-content">
+                <h3>The Asylum's Layout</h3>
+                <p>The Mount Massive Asylum is a maze of dark corridors, forgotten rooms, and abandoned spaces. Its eerie architecture adds to the psychological horror of the game, with its seemingly endless hallways and hidden rooms that challenge both your mind and your sense of direction.</p>
+                <ul>
+                    <li><strong>Male Ward:</strong> Dangerous inmates and dark, claustrophobic hallways filled with broken furniture and bloodstains.</li>
+                    <li><strong>Administration:</strong> Security systems and computer terminals holding vital information about experiments.</li>
+                    <li><strong>Chapel:</strong> Religious imagery twisted by madness, key story beats, and a haunting atmosphere.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map-section">
+            <img src="../images/Orphanage.png.png" alt="Exploring Mount Massive">
+            <div class="map-section-content">
+                <h3>Exploring Mount Massive</h3>
+                <p>The facility design evokes unease. The physical and psychological maze disorients players with rooms and corridors looping endlessly. Environmental storytelling hints at the institution's dark past.</p>
+                <ul>
+                    <li><strong>Laboratories:</strong> The center of Murkoff’s experiments, sterile yet filled with blood and gore.</li>
+                    <li><strong>Guard Towers:</strong> Once a symbol of security, now powerless against the horrors within.</li>
+                    <li><strong>Ventilation Systems:</strong> Escape routes fraught with traps and lurking threats.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map-section">
+            <img src="../images/Police_station_entrance.png" alt="Navigation Challenges">
+            <div class="map-section-content">
+                <h3>The Challenges of Navigation</h3>
+                <p>Navigation is a key challenge at Mount Massive Asylum. Winding paths and ever-present danger make every decision critical. Dim lighting adds tension, and the escalating horrors as you move deeper keep you on edge.</p>
+                <p>Exploration comes with risk—being caught in the wrong place is often fatal. Stay on guard as every corner hides lurking threats, creating a constant sense of vulnerability.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Outlast Chronicles | Mapping the Horrors of Mount Massive</p>
+    </footer>
+</body>
+</html>
